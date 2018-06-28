@@ -104,8 +104,22 @@ header #logotipo{
     display: inline-block;
     font-family: 'OpenSans';
 }
+#menu li.search{
+    width: 182px;
+}
+#menu li.search input{
+    background-color: #5C2D90;
+    color: #FFF;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+}
+#menu li.search input::-webkit-input-placeholder{
+    color: #FFF;
+}
 #menu li a{
     color: #FFF;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 25px;
+    text-decoration: none;
 }
