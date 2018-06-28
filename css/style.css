@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
     font-family: 'OpenSans';
     src: url("../fonts/OpenSans-Regular.ttf");
     font-size: 1em;
@@ -102,6 +102,7 @@ header #logotipo{
 }
 #menu li{
     display: inline-block;
+    font-family: 'OpenSans';
 }
 #menu li a{
     color: #FFF;
