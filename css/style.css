@@ -102,7 +102,6 @@ header #logotipo{
 }
 #menu li{
     display: inline-block;
-    font-family: 'OpenSans';
 }
 #menu li a{
     color: #FFF;
