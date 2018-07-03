@@ -165,3 +165,51 @@ header #logotipo{
     font-family: 'OpenSans';
     font-weight: bold;
 }
+#news{
+    position: relative;
+    top: -110px;
+}
+#news h2{
+    color: #5E2799;
+    font-family: 'OpenSans';
+    font-size: 48px;
+    text-align: center;
+}
+#news hr{
+    border: #FDE192 solid 2px;
+    width: 200px;
+    margin: 0 auto;
+}
+#news .thumbnails{
+    margin-top: 20px;
+}
+#news .thumbnails h3{
+    color: #5E299A;
+    font-size: 18px;
+    font-family: 'OpenSans';
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#news .thumbnails time{
+    color: #A7A7A7;
+    font-size: 18px;
+    font-family: 'OpenSans';
+}
+#estatisticas{
+    background-color: #5E299A;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+#estatisticas p{
+    color: #FDE092;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Light';
+    font-size: 64px;
+    margin-top: 30px;
+}
+#estatisticas p small{
+    color: #FFF;
+    font-size: 24px;
+    display: block;
+}
