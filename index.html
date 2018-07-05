@@ -202,5 +202,12 @@
 
         <script src="jquery/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#logotipo").on("mouseover", function(){
+                    $("#banner h1").css({"color":"red", "font-size":"7em","transition":"1s"});
+                });
+            });
+        </script>
     </body>
 </html>
