@@ -279,12 +279,14 @@ footer .text-branco{
     color: #666;
     font-family: 'OpenSans';
     font-size: 14px;
+    margin-top: 19px;
 }
 footer .text-roxo{
     color: #623291;
     font-family: 'OpenSans';
     font-weight: bold;
     font-size: 14px;
+    margin-top: 19px;
 }
 footer .logotipo{
     margin-top: 28px;
