@@ -104,6 +104,10 @@ header #logotipo{
     top: 20px;
     z-index: 3;
 }
+#banner h1.efeito{
+    color: red;
+    font-size: 7em;
+}
 #menu{
     margin: 15px 0;
 }
@@ -113,6 +117,10 @@ header #logotipo{
 }
 #menu li.search{
     width: 182px;
+    transition-duration: 1s;
+}
+#menu li.search.ativo{
+    width: 300px;
 }
 #menu li.search input{
     background-color: #5C2D90;
@@ -120,6 +128,9 @@ header #logotipo{
     height: 30px;
     border: none;
     line-height: 30px;
+}
+#menu li.search.ativo input{
+    width: 300px;
 }
 #menu li.search input::-webkit-input-placeholder{
     color: #FFF;
@@ -149,6 +160,7 @@ header #logotipo{
     top: -110px;
 }
 #banner h1{
+    transition: 1s;
     color: #FFF;
     top: 300px;
     position: relative;
