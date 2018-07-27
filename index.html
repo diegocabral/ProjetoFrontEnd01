@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Orlando City</title>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="owl-carousel2/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owl-carousel2/dist/assets/owl.theme.default.min.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
@@ -75,26 +77,69 @@
                     <h2>LATEST NEWS</h2>
                     <hr>
                 </div>
-                <div class="row thumbnails">
-                    <div class="col-md-3">
-                        <img src="img/noticia-thumb.jpg" alt="Notícia">
-                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                        <time>July 03, 2018 </time>
+                <div class="row thumbnails owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <img src="img/noticia-thumb.jpg" alt="Notícia">
-                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                        <time>July 03, 2018 </time>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <img src="img/noticia-thumb.jpg" alt="Notícia">
-                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                        <time>July 03, 2018 </time>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <img src="img/noticia-thumb.jpg" alt="Notícia">
-                        <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
-                        <time>July 03, 2018 </time>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-inner">
+                            <img src="img/noticia-thumb.jpg" alt="Notícia">
+                            <h3>Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC</h3>
+                            <time>July 03, 2018 </time>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,6 +246,7 @@
         </footer>
 
         <script src="jquery/jquery.min.js"></script>
+        <script src="owl-carousel2/dist/owl.carousel.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
             $(document).ready(function(){
@@ -209,10 +255,29 @@
                 }).on("mouseout", function(){
                     $("#banner h1").removeClass("efeito");
                 });
+
                 $("#input-search").on("focus", function(){
                     $("li.search").addClass("ativo");
                 }).on("blur", function(){
                     $("li.search").removeClass("ativo");
+                });
+
+                $(".thumbnails").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    navText: ["Anterior", "Próximo"],
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        480: {
+                            items: 3
+                        },
+                        768: {
+                            items: 5
+                        }
+                    }
                 });
             });
         </script>
